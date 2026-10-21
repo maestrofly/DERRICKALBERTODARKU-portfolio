@@ -192,14 +192,13 @@ export function PortfolioSite() {
     setFormState("sending");
 
     try {
-      const response = await fetch("/__forms.html", {
-        method: "POST",
-        headers: {
-          "Content-Type":
-            "application/x-www-form-urlencoded",
-        },
-        body: params.toString(),
-      });
+      const response = await fetch("/", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded",
+  },
+  body: params.toString(),
+});
 
       if (!response.ok) {
         throw new Error(
