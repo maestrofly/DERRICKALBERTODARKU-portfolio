@@ -132,7 +132,7 @@ export function PortfolioSite() {
 
     <span className="flex items-center gap-2 sm:justify-end">
       <span className="size-2 animate-pulse rounded-full bg-[#42E0BB]" />
-      Available for select projects
+      Available for select projects. Let's work!
     </span>
   </div>
 </section>
