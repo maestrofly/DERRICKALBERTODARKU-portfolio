@@ -6,11 +6,11 @@ import Image from "next/image"
 import {
   ArrowUpRight,
   Check,
+  Camera,
   ChevronDown,
   Code2,
   Compass,
   ExternalLink,
-  Instagram,
   Menu,
   Search,
   Send,
@@ -26,7 +26,14 @@ const projects = [
   { title: 'Kantanka Automobile', type: 'Strategy', tag: 'Digital marketing capstone', summary: 'A proposed digital strategy developed through MEST / Generation Ghana training.', visual: 'bg-gradient-to-br from-[#dbe4f3] via-[#8098c3] to-[#263957]' },
   { title: 'Pyteline', type: 'SEO', tag: 'SEO · Blogging', summary: 'Search-friendly content and indexing support for a growing digital presence.', visual: 'bg-gradient-to-br from-[#e9e4ff] via-[#b4a4e8] to-[#594a9c]' },
 ]
-const services = [
+type Service = [
+  number: string,
+  title: string,
+  description: string,
+  deliverables: string[]
+];
+
+const services: Service[] = [
   ['01', 'Digital presence audits', 'A clear-eyed review of your website, content, search visibility and conversion path.', ['Website and channel review', 'Opportunity map', 'Prioritized action plan']],
   ['02', 'Content & social strategy', 'Build a consistent point of view that gives the right people a reason to pay attention.', ['Content pillars', 'Platform direction', 'Campaign concepts']],
   ['03', 'SEO & website optimization', 'Make your digital home easier to discover, understand and act on.', ['On-page SEO', 'Content briefs', 'UX recommendations']],
